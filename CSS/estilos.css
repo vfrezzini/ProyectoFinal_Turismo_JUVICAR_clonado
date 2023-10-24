@@ -1,0 +1,14 @@
+/*Selector Universal - aplica a todos los elementos de la pag*/
+*{ margin: 5px;
+    padding: 5px;
+background-color:beige; }
+
+/* Selector de etiqueta - solo aplica a una etiqueta particular */
+h1{ color:black;
+background-color: aqua;
+border: solid; }
+
+/* Selector de Clase - se puede reutilizar */
+.clase1 {color: blue;
+    background-color: aqua;
+    border: solid; }

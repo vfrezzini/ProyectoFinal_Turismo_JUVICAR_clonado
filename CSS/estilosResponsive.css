@@ -1,0 +1,317 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+   }
+
+main {
+	
+	display: block; /* Para que se muestre un elemento debajo del otro*/
+	margin: 10px;
+   }
+
+
+a {
+	text-decoration: none ;
+	color: black;
+}
+
+header {
+ display: flex; /*"Para que los elementos se muestren de manera horizontal"*/
+ min-height: 70px;
+ justify-content: space-between; /* para que los elementos del header se separen*/
+ background-color: white;
+ align-items: center; /* Alinear elementos verticalmente*/
+ padding: 10px;  /* Para separar un poco los elementos de su borde*/
+}
+
+p {
+    display: block;
+ 
+}
+
+footer {
+  
+ 
+	margin: 10px;
+	 width: 20%;
+	 border-top: 2px solid rgba(0, 0, 0, 0.24);  
+	 /*  poner footer abajo */
+	 
+	 left: 0;
+	 bottom: 0;
+	 width: 100%;
+	 background-color: #bcdbfb; 
+	 display: flex;
+	
+   }
+
+.contenedor {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+  }
+
+
+.logo {
+	display: flex; /*"Para que los elementos se muestren de manera horizontal"*/
+	align-items: center;
+   }
+
+.logo img
+{
+	display: flex; /*"Para que los elementos se muestren de manera horizontal"*/
+	height: 100px;
+	margin-right:10px;
+   }
+
+
+nav a {
+
+	font-weight: 500; /*Para que se vea en negrita*/
+	padding-right: 10px;
+	padding: .5rem 1rem;
+	color: #222;
+
+}
+
+ 
+
+nav a:hover {/* como se ve cuando le pasamos el cursor por encima */
+	color: #3f539c;
+}
+
+@media (max-width:480px){ /* Cuando la ventana es menor a 480 pixeles por ejemplo tablet*/
+	header{
+		flex-direction: column;
+		nav{
+			padding: 5px 0px;
+		};
+	}
+
+	main{
+		flex-direction: column;
+		nav{
+			padding: 5px 0px;
+		};
+	}
+
+	footer{
+		flex-direction: column;
+		nav{
+			padding: 5px 0px;
+		};
+	}
+
+	.contenedor-principal{
+		flex-direction: column;
+		nav{
+			padding: 5px 0px;
+		};
+	}
+
+
+}
+
+
+.comollegar {
+	display: block;
+	width: 60%px;
+	max-width: 1000px;
+	align-content: center;
+   ;}
+  
+   .comollegarTitulo {
+	color: #209eed !important;
+	font-size: xx-large;
+	font-style: normal;
+	align-content: center;
+	stroke: #209eed;
+  }
+
+.Servicio {
+	
+	display: flex; /*"Para que los elementos se muestren de manera horizontal"*/
+	position: relative;
+	overflow: hidden; 
+	padding: 20px;
+}
+
+.Servicio-logo {
+	height: 100px;
+	margin-right:10px;
+
+
+background-color: #3f539c;}
+
+.Servicio-descripcion {
+	display: inline-block;
+	margin-right:10px;
+	font-size: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ExcursionTitulo {
+	color: #3272e1; 
+	font-size: 20px;
+ 
+}
+
+      
+.three-columns {
+	width: 32%;
+	display: inline-block;
+	}
+
+.row {
+	margin-right: 15px;
+	margin-left: 15px;
+	display: flow;
+  }
+
+.DondeEstamos {
+
+	font-size: 15px;
+	margin-left: 10px;
+ 
+}
+
+/*----------- CONTENEDOR -----------*/
+.contenedor-principal {
+	/* display: flex;
+	 align-content: center;
+	 justify-content: space;
+	 height: 100vh;*/
+	 width: 100%;
+	 display: flex;
+	 max-width: 1000px;
+   
+	 margin: 0 auto;
+		
+   
+	 
+	}
+
+	.contenedor {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	  }
+	
+	/*----------- TARJETA -----------*/
+	.tarjeta1 {
+		width: 250px;
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		cursor: url(img/favicon.ico), pointer !important;
+		position: relative;
+		overflow: hidden; 
+	  border-style: solid;
+	  border-color:  #bcdbfb;
+	  margin-right: 50px;}
+	  
+	  .tarjeta2 {
+		width: 250px;
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		cursor: url(img/favicon.ico), pointer !important;
+		position: relative;
+		overflow: hidden; 
+	  border-style: solid;
+	  border-color:  #bcdbfb;
+	  margin-right: 50px;
+	  }
+	  
+	  .tarjeta3 {
+		width: 250px;
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		cursor: url(img/favicon.ico), pointer !important;
+		position: relative;
+		overflow: hidden; 
+	  border-style: solid;
+	  border-color:  #bcdbfb;
+	  margin-right: 50px;
+	  }
+	  
+	  .tarjeta4 {
+		width: 250px;
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		cursor: url(img/favicon.ico), pointer !important;
+		position: relative;
+		overflow: hidden; 
+	  border-style: solid;
+	  border-color:  #bcdbfb;
+	  margin-right: 50px;
+	  }
+	
+	  .tarjeta-cuerpo {
+	
+	  display: grid;
+	  bottom: 0;
+	  margin-bottom: 0px;
+	}
+	
+	
+	.leer-mas {
+	
+	  color: blue;
+	  bottom: 0;
+	}
+	
+	  
+	
+	
+	
+	
+	 /*----------- IMAGEN DE LA TARJETA -----------*/
+	 .tarjeta .imagen-contenedor {
+		width: 100%;
+		height: 200px;
+		position: relative;
+		overflow: hidden; /*desbordamiento*/
+		transition: all 0.2s; /*transición*/
+		border-style: solid;
+		border-color: aqua;
+	  }
+	
+	   /* este es el formato del texto que dice "Recomendado" y "Mas Vendido" dentro de cada tarjeta*/
+	.CardGlobal__OverImgLabel {
+	  
+		z-index: 5;
+		top: 11px;
+		right: 0;
+		text-align: center;
+		color: rgb(19, 19, 19);
+		font-size: .81rem;
+		padding: 5px 10px;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	  }
+	
+	  table,
+	  th,
+	  td
+	  {border: solid rgb(31, 27, 167) }
+	
+	
+	  
+	
+	.dollarCotizations {
+		display: flex;
+	
+		place-items: left;
+	}
+	
+	.dollarDiv {
+		width: 100%;
+		text-align: left;
+	}
+	
+	#dollarNow, #dollarBlueNow {
+		color: green;
+		font-weight: 600;
+		font-size: 3rem;
+	}
+	
+	
